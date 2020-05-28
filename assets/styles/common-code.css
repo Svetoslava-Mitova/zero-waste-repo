@@ -1,4 +1,5 @@
-/*
+/*This file will include the common css code for all site pages.*/
+
 :root {
     --sitecolor: #537073;
     --black: #121212;
@@ -25,13 +26,11 @@ img{
     width: 1138px;
     margin: auto;
 }
-*/
  
 /*MENU*/
 
 
         /*mobile menu*/
-/*
 .mobile-menu a{
     display: inline-block;
     
@@ -50,12 +49,10 @@ img{
     margin: 16px;
     cursor: pointer;
 }
-*/
 
 
 
         /*web menu*/
-/*
 ul{
     list-style: none;
     padding: 0px;
@@ -117,10 +114,9 @@ li.dropdown{
 .right{
     margin-right: 408px;
 }
-*/
+
 
 /*        arrows*/
-/*
 .arrows{
     margin-left: 1048px;
     opacity: 0.6;
@@ -128,52 +124,8 @@ li.dropdown{
     bottom: 0;
     margin-bottom: 72px;
 }
-*/
-
-
-/*BANNER*/
-header{
-    background-image: url(../images/banner2.jpg);
-    background-size: cover;
-    background-position:center;
-    height: 328px;
-    padding: 48px 32px 180px 128px;
-    color: var(--white);
-    font-size: 1.5em;
-    font-weight: 500;
-    margin-top: 72px;
-}
-
-
-/*STORY*/
-h1{
-    text-align: center;
-    color: var(--sitecolor);
-    margin-bottom: 64px;
-    font-size: 2rem;
-}
-.story{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    color: var(--sitecolor);
-}
-.paragraph{
-    font-size: 0.9rem;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    margin-left: 32px;
-    margin-right: 32px;
-}
-.story img{
-    display: inline-block;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    width: 88%; 
-    margin-top: 24px;
-}
 
 /*contacts*/
-/*
 .contacts a{
     display: block;
     color: var(--sitecolor);
@@ -186,10 +138,8 @@ h1{
     margin: auto;
     
 }
-*/
 
 /*ARTICLES*/
-/*
 .most-read{
     margin-bottom: 8px;
 }
@@ -228,10 +178,8 @@ h1{
     height: 72px;
     padding-top: 16px;
 }
-*/
 
 /*footer*/
-/*
 .breadcrumbs a{
     text-decoration: none;
     color: var(--black);
@@ -247,157 +195,41 @@ footer{
 .menu-footer{
     opacity: 0.6;
 }
-*/
 
 @media(max-width: 940px){
-/*
     .menu .web-menu{
         display: none;
     }
     
-    mobile menu
+    /*mobile menu*/
     .menu .mobile-menu{
         display: grid;
         grid-template-columns: 7fr 1fr 1fr 1fr;
         width: 100%;
     }
-*/
     
-    header{
-        background-image: url(../images/banner2.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 248px;
-        padding: 24px 32px 180px 104px;
-        margin-top: 112px;
-        color: var(--white);
-        font-size: 2rem;
-        font-weight: 500;
-    }
-    h1{
-        font-size: 3rem;
-        margin-top: 88px;
-    }
-    
-    .story{
-        display: grid;
-        grid-template-columns: 1fr;
-        
-    }
-    .story img{
-        width: 50%;
-        margin-left: 264px;
-    }
-    .paragraph{
-        margin-left: 102px;
-        margin-right: 102px;
-        font-size: 1.5rem;
-        line-height: 2rem;
-    }
-    .articles{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 32px;
-        text-align: center;
-    }
-    .articles img{
-        display: block;
-        border-radius: 50%;
-        width: 32%;
-        margin-left: 384px;
-        margin-bottom: 32px;
-    }
-    .articles p{
-        height: 56px;
-        width: 500px;
-        margin-left: 312px;
-    }
-    .articles p a{
-        display: inline-block;
-        font-size: 2rem;
-        line-height: 2.5rem;
-    }
-    .articles .button{
-        font-size: 3rem;
-        width: 424px;
-        height: 64px;
-        padding-top: 64px;
-        margin-top: 64px;
-        margin-bottom: 128px;
-    }
-    .breadcrumbs{
-        display: none;
-    }
-}
-
-@media(max-width: 530px) {
-/*
+    @media(max-width: 530px) {
     .menu .mobile-menu{
         display: grid;
         grid-template-columns: 7fr 1fr 1fr 1fr;
         width: 100%;
     }
-*/
-   
-    h1{
-        font-size: 4rem;
-        margin-top: 88px;
-    }
-    
-    .story{
-        display: grid;
-        grid-template-columns: 1fr;
         
-    }
-    .story img{
-        width: 50%;
-        margin-left: 264px;
-    }
-    .paragraph{
-        margin-left: 102px;
-        margin-right: 102px;
-        font-size: 2rem;
-        line-height: 3rem;
-    }
-}
-
-/*
-@media(max-width: 400px){
+        @media(max-width: 400px){
     .paragraph{
         font-size: 2.5rem;
         line-height: 3.5rem;
 }
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            @media(max-width: 290px) {
+    .menu .mobile-menu{
+        display: grid;
+        grid-template-columns: 5fr 1fr 1fr 1fr;
+        width: 100%;
+    }
+    .paragraph{
+        margin-left: 100px;
+        width: 648px;
+    }
 
 
 
