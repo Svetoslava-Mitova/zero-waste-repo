@@ -208,6 +208,15 @@ footer{
         width: 100%;
     }
     
+    @media(max-width: 600px){
+    body{
+        line-height: 48px;
+        font-size: 32pt;
+    }
+    .breadcrumbs{
+        display: none;
+    }
+    
     @media(max-width: 530px) {
     .menu .mobile-menu{
         display: grid;
@@ -215,12 +224,8 @@ footer{
         width: 100%;
     }
         
-        @media(max-width: 400px){
-    .paragraph{
-        font-size: 2.5rem;
-        line-height: 3.5rem;
-}
-            @media(max-width: 290px) {
+  
+    @media(max-width: 290px) {
     .menu .mobile-menu{
         display: grid;
         grid-template-columns: 5fr 1fr 1fr 1fr;

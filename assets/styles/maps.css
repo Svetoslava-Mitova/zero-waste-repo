@@ -264,6 +264,7 @@ footer{
 */
 
 @media(max-width: 600px){
+/*
     body{
         line-height: 48px;
         font-size: 32pt;
@@ -271,6 +272,7 @@ footer{
     .breadcrumbs{
         display: none;
     }
+*/
     h1{
         font-size: 4rem;
         margin-top: 168px;
@@ -350,11 +352,11 @@ footer{
         grid-template-columns: 5fr 1fr 1fr 1fr;
         width: 100%;
     }
+*/
     .paragraph{
         margin-left: 100px;
         width: 648px;
     }
-*/
     h1{
         text-align: left;
     }
