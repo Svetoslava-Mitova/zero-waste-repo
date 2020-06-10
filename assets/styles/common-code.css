@@ -26,14 +26,10 @@ img{
     width: 1138px;
     margin: auto;
 }
- 
 /*MENU*/
-
-
-        /*mobile menu*/
+/*mobile menu*/
 .mobile-menu a{
-    display: inline-block;
-    
+    display: inline-block;  
 }
 .submenu{
     line-height: 0.6rem;
@@ -52,10 +48,7 @@ img{
     margin: 16px;
     cursor: pointer;
 }
-
-
-
-        /*web menu*/
+/*web menu*/
 ul{
     list-style: none;
     padding: 0px;
@@ -65,7 +58,6 @@ ul{
     box-shadow: var(--shadow);
     font-size: 1.2rem;
 }
-
 li {
   float: left;
 }
@@ -117,9 +109,7 @@ li.dropdown{
 .right{
     margin-right: 408px;
 }
-
-
-/*        arrows*/
+/*arrows*/
 .arrows{
     margin-left: 1048px;
     opacity: 0.6;
@@ -131,7 +121,6 @@ li.dropdown{
     display: inline-block;
     color: var(--sitecolor);
 }
-
 /*contacts*/
 .contacts a{
     display: block;
@@ -142,10 +131,8 @@ li.dropdown{
 .contacts{
     display: flex;
     flex: 3;
-    margin: auto;
-    
+    margin: auto; 
 }
-
 /*ARTICLES*/
 .most-read{
     margin-bottom: 8px;
@@ -185,7 +172,6 @@ li.dropdown{
     height: 72px;
     padding-top: 16px;
 }
-
 /*footer*/
 .breadcrumbs a{
     text-decoration: none;
@@ -195,27 +181,24 @@ li.dropdown{
 footer{
     margin-top: 88px;
 }
-
 .right-footer{
     margin-right: 456px;
 }
 .menu-footer{
     opacity: 0.6;
 }
-
 @media(max-width: 940px){
     .menu .web-menu{
         display: none;
     }
-    
     /*mobile menu*/
     .menu .mobile-menu{
         display: grid;
         grid-template-columns: 7fr 1fr 1fr 1fr;
         width: 100%;
     }
-    
-    @media(max-width: 600px){
+}
+@media(max-width: 600px){
     body{
         line-height: 48px;
         font-size: 32pt;
@@ -223,16 +206,15 @@ footer{
     .breadcrumbs{
         display: none;
     }
-    
-    @media(max-width: 530px) {
+}
+@media(max-width: 530px) {
     .menu .mobile-menu{
         display: grid;
         grid-template-columns: 7fr 1fr 1fr 1fr;
         width: 100%;
     }
-        
-  
-    @media(max-width: 290px) {
+}
+@media(max-width: 290px) {
     .menu .mobile-menu{
         display: grid;
         grid-template-columns: 5fr 1fr 1fr 1fr;
@@ -242,6 +224,5 @@ footer{
         margin-left: 100px;
         width: 648px;
     }
-
-
+}
 

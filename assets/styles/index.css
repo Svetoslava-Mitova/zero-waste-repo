@@ -12,8 +12,6 @@ header{
     font-weight: 500;
     margin-top: 72px;
 }
-
-
 /*STORY*/
 h1{
     text-align: center;
@@ -40,10 +38,7 @@ h1{
     width: 88%; 
     margin-top: 24px;
 }
-
-
 @media(max-width: 940px){
-    
     header{
         background-image: url(../images/banner2.jpg);
         background-size: cover;
@@ -59,7 +54,6 @@ h1{
         font-size: 3rem;
         margin-top: 88px;
     }
-    
     .story{
         display: grid;
         grid-template-columns: 1fr;
@@ -110,18 +104,14 @@ h1{
         display: none;
     }
 }
-
 @media(max-width: 530px) {
-
     h1{
         font-size: 4rem;
         margin-top: 88px;
     }
-    
     .story{
         display: grid;
-        grid-template-columns: 1fr;
-        
+        grid-template-columns: 1fr; 
     }
     .story img{
         width: 50%;
