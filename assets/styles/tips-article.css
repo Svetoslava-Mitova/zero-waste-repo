@@ -50,6 +50,9 @@ article .img-two{
     margin-top: 64px;
     margin-left: 112px;
 }
+.img-two a{
+    display: inline-block;
+}
 .img-one img{
     display: block;
     border-radius: 50%;

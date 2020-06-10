@@ -42,6 +42,9 @@ img{
     font-size: 1rem;
     margin-left: 16px;
 }
+.submenu h4{
+    font-weight: 200;
+}
 .mobile-menu .cntcts{
     margin: 16px;
 }
@@ -123,6 +126,10 @@ li.dropdown{
     position: fixed;
     bottom: 0;
     margin-bottom: 72px;
+}
+.arrows a{
+    display: inline-block;
+    color: var(--sitecolor);
 }
 
 /*contacts*/
