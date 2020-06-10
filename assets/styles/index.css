@@ -24,11 +24,10 @@ h1{
     grid-template-columns: repeat(2, 1fr);
     color: var(--sitecolor);
 }
-.paragraph{
+.story p{
     font-size: 0.9rem;
     grid-column: 1/2;
     grid-row: 1/2;
-    margin-left: 32px;
     margin-right: 32px;
 }
 .story img{

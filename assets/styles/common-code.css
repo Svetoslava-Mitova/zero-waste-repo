@@ -134,7 +134,10 @@ li.dropdown{
     margin: auto; 
 }
 /*ARTICLES*/
-.most-read{
+h1{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--sitecolor);
     margin-bottom: 8px;
 }
 .articles{
@@ -184,7 +187,7 @@ footer{
 .right-footer{
     margin-right: 456px;
 }
-.menu-footer{
+footer div ul{
     opacity: 0.6;
 }
 @media(max-width: 940px){
