@@ -31,6 +31,7 @@ body{
 }
 img{
     max-width: 100%;
+    image-resolution: 72dpi;
 }
 .wrapper{
     display: grid;
