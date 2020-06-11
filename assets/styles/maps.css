@@ -48,6 +48,9 @@ h3{
     width: 248px;
     text-align: center;
 }
+.maps a:hover{
+    opacity: var(--hover-opacity);
+}
 /*GROUPS*/
 .button-maps{
     display: inline-block;

@@ -140,6 +140,9 @@ li.dropdown{
     flex: 3;
     margin: auto; 
 }
+.contacts a:hover{
+    opacity: var(--hover-opacity);
+}
 /*ARTICLES*/
 h1{
     font-size: 2em;
@@ -180,6 +183,9 @@ h1{
     position: relative;
     left: var(--largest-gap);
 }
+.articles a:hover{
+    opacity: var(--hover-opacity);
+}
 /*footer*/
 .breadcrumbs a{
     text-decoration: none;
@@ -189,6 +195,9 @@ h1{
 .breadcrumbs {
     margin-left: var(--small-gap);
 }
+.breadcrumbs a:hover{
+    opacity: var(--hover-opacity);
+}
 footer{
     margin-top: var(--largest-gap);
 }
@@ -197,6 +206,9 @@ footer div ul{
     margin-top: var(--smallest-gap);
     border-top-left-radius: var(--smallest-gap);
     border-top-right-radius: var(--smallest-gap);
+}
+footer ul a:hover{
+    color: var(--black);
 }
 @media(max-width: 940px){
     .menu .web-menu{

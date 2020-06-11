@@ -38,7 +38,6 @@ article .img-four{
     border-radius: 50%;
     width: 80%;
     margin: var(--medium-gap) var(--medium-gap);
-
 }
 article .img-two{
     display: flex;
@@ -49,6 +48,9 @@ article .img-two{
     border-radius: 50%;
     width: 70%;
     margin: var(--medium-gap) var(--largest-gap);
+}
+article a:hover{
+    opacity: var(--hover-opacity);
 }
 @media(max-width:600px){
     h1{
