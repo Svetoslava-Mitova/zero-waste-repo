@@ -2,31 +2,32 @@
 
 .breadcrumbs a{
     display: inline-block;
-    margin-top: 48pt;
     text-decoration: none;
     color: var(--black);
-    font-size: 1rem;  
+    font-size: 1em;  
+    margin-top: var(--largest-gap);
+    margin-left: var(--smallest-gap);
+}
+article{
+    margin: 0 var(--largest-gap);
+    color: var(--sitecolor);
 }
 h1{
-    font-size: 2rem;
     text-align: center;
-    margin-top: 88px;
-    margin-bottom: 64px;
+    color: var(--sitecolor);
+    margin: var(--large-gap);
+    font-size: 2em;
 }
 h3{
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 1.2em;
     font-style: italic;
     text-align: right;
-    margin-right: 40px;
+    font-weight: 200;
+    margin-right: var(--largest-gap);
 }
 article p{
-    font-size: 1.5rem;
-    line-height: 2rem;
-    margin-top: 72px;
-    text-indent: 4rem;
-    margin-left: 40px;
-    margin-right: 40px;
+    font-size: 1em;
+    margin: var(--medium-gap) var(--largest-gap);
 }
 article .img-four{
     display: flex;
@@ -35,8 +36,9 @@ article .img-four{
 .img-four img{
     display: block;
     border-radius: 50%;
-    width: 90%;
-    margin-top: 64px;
+    width: 80%;
+    margin: var(--medium-gap) var(--medium-gap);
+
 }
 article .img-two{
     display: flex;
@@ -45,20 +47,8 @@ article .img-two{
 .img-two img{
     display: block;
     border-radius: 50%;
-    width: 100%;
-    margin-top: 64px;
-    margin-left: 112px;
-}
-.img-two a{
-    display: inline-block;
-}
-.img-one img{
-    display: block;
-    border-radius: 50%;
-    margin-top: 64px;
-    width: 64%;
-    margin-left: 216px;
-    margin-bottom: 88px;
+    width: 70%;
+    margin: var(--medium-gap) var(--largest-gap);
 }
 @media(max-width:600px){
     h1{

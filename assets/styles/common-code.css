@@ -1,19 +1,31 @@
 /*This file include the common css code for all site pages.*/
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
 
 :root {
+/*colors*/
     --sitecolor: #537073;
     --black: #121212;
     --white: #ffffff;
     --shadow: 0px 1px 2px #537073;
+/*spaces*/
+    --smallest-gap: 8px;
+    --small-gap: 16px;
+    --medium-gap: 24px;
+    --large-gap: 32px;
+    --largest-gap: 64px;
+    --round-edge: 15px;
+    --hover-opacity: 0.6;
 }
 html{
-    font-family: 'Ubuntu', sans-serif;
     box-sizing: border-box;
+    font: 16px/1.5 "Ubuntu", sans-serif;
     scroll-behavior: smooth;
 }
 body{
-    line-height: 24px;
-    font-size: 16pt;
     color: var(--black);
     text-align: justify;
 }
@@ -22,9 +34,8 @@ img{
 }
 .wrapper{
     display: grid;
-    grid-gap: 30px;
-    width: 1138px;
-    margin: auto;
+    grid-gap: var(--large-gap);
+    margin: 0, var(--large-gap);
 }
 /*MENU*/
 /*mobile menu*/
@@ -32,20 +43,20 @@ img{
     display: inline-block;  
 }
 .submenu{
-    line-height: 0.6rem;
+    font-size: 1em;
 }
 .submenu-items{
-    font-size: 1rem;
-    margin-left: 16px;
+    margin: 0, var(--smallest-gap);
 }
 .submenu h4{
     font-weight: 200;
+    margin-left: var(--small-gap);
 }
 .mobile-menu .cntcts{
-    margin: 16px;
+    margin: var(--small-gap);
 }
 .mobile-menu .dropdown-button{
-    margin: 16px;
+    margin: var(--smallest-gap);
     cursor: pointer;
 }
 /*web menu*/
@@ -54,9 +65,10 @@ ul{
     padding: 0px;
     overflow: hidden;
     background-color: var(--sitecolor);
-    border-radius: 16px;
+    border-bottom-right-radius: var(--smallest-gap);
+    border-bottom-left-radius: var(--smallest-gap);
     box-shadow: var(--shadow);
-    font-size: 1.2rem;
+    font-size: 1em;
 }
 li {
   float: left;
@@ -67,10 +79,15 @@ li a, .dropdown-button{
     color: var(--white);
     text-decoration: none;
     text-align: center;
-    padding: 8px 20px;
+    padding: var(--small-gap);
 }
-li a:hover, .dropdown:hover{
-    font-weight: 500;
+.dropdown-content a:hover{
+    display: inline-block;
+    opacity: var(--hover-opacity);  
+}
+.dropdown-button:hover{
+    display: inline-block;
+    opacity: var(--hover-opacity);
 }
 li.dropdown{
     display: inline-block;
@@ -79,19 +96,14 @@ li.dropdown{
     display: none;
     position: absolute;
     background-color: var(--sitecolor);
-    min-width: 160px;
     box-shadow: var(--shadow);
 }
 .dropdown-content a {
   color: var(--white);
-  padding: 12px 16px;
+  padding: var(--smallest-gap);
   text-decoration: none;
   display: block;
-  text-align: left;
-  font-weight: 400;    
-}
-.dropdown-content a:hover {
-    background-color: var(--sitecolor); 
+  text-align: left;    
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -106,16 +118,12 @@ li.dropdown{
 .menu .mobile-menu{
     display: none;
 }
-.right{
-    margin-right: 408px;
-}
 /*arrows*/
 .arrows{
-    margin-left: 1048px;
     opacity: 0.6;
     position: fixed;
-    bottom: 0;
-    margin-bottom: 72px;
+    bottom: var(--largest-gap);
+    right: var(--medium-gap);  
 }
 .arrows a{
     display: inline-block;
@@ -125,8 +133,7 @@ li.dropdown{
 .contacts a{
     display: block;
     color: var(--sitecolor);
-    margin: 48px 16px;
-    padding: 8px;
+    margin: var(--large-gap) var(--medium-gap);
 }
 .contacts{
     display: flex;
@@ -135,15 +142,14 @@ li.dropdown{
 }
 /*ARTICLES*/
 h1{
-    font-size: 2rem;
+    font-size: 2em;
     text-align: center;
     color: var(--sitecolor);
-    margin-bottom: 8px;
 }
 .articles{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 16px;
+    margin: 0 var(--largest-gap);
 }
 .articles p a{
     display: block;
@@ -151,44 +157,46 @@ h1{
     color: var(--sitecolor);
     text-transform: uppercase;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1em;
+    margin: var(--small-gap);
+    
 }
-.articles img{
-    display: block;
+.articles a img{
+    display: inline;
     border-radius: 50%;
-    width: 80%;
-    margin-left: 24px;
+    width: 64%;
+    margin-left: var(--largest-gap);
 }
 .button{
     display: inline-block;
     background: var(--sitecolor);
     color: var(--white);
-    padding: 16px;
-    margin: 32px;
-    margin-top: 0px;
-    font-size: ;
-    border-radius: 15px;
+    padding: var(--small-gap);
+    margin: 0 var(--medium-gap);
+    font-size: 1em;
+    border-radius: var(--round-edge);
     text-decoration: none;
     box-shadow: var(--shadow);
-}
-.articles p{
-    height: 72px;
-    padding-top: 16px;
+    position: relative;
+    left: var(--largest-gap);
 }
 /*footer*/
 .breadcrumbs a{
     text-decoration: none;
     color: var(--black);
-    font-size: 1rem;
+    font-size: 1em;
+}
+.breadcrumbs {
+    margin-left: var(--small-gap);
 }
 footer{
-    margin-top: 88px;
-}
-.right-footer{
-    margin-right: 456px;
+    margin-top: var(--largest-gap);
 }
 footer div ul{
     opacity: 0.6;
+    margin-top: var(--smallest-gap);
+    border-top-left-radius: var(--smallest-gap);
+    border-top-right-radius: var(--smallest-gap);
 }
 @media(max-width: 940px){
     .menu .web-menu{

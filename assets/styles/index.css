@@ -5,8 +5,8 @@ header{
     background-image: url(../images/banner2.jpg);
     background-size: cover;
     background-position:center;
-    height: 328px;
-    padding: 48px 32px 180px 128px;
+    height: 456px;
+    padding: var(--largest-gap);
     color: var(--white);
     font-size: 1.5em;
     font-weight: 500;
@@ -16,26 +16,33 @@ header{
 h1{
     text-align: center;
     color: var(--sitecolor);
-    margin-bottom: 64px;
-    font-size: 2rem;
+    margin: var(--large-gap);
+    font-size: 2em;
 }
 .story{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     color: var(--sitecolor);
+    margin: 0 var(--largest-gap);
+    grid-gap: var(--large-gap);
+    padding: var(--smallest-gap) var(--largest-gap);
+}
+.story h3{
+    margin-bottom: var(--smallest-gap);
+    font-size: 1.2em;
 }
 .story p{
-    font-size: 0.9rem;
+    font-size: 1em;
     grid-column: 1/2;
     grid-row: 1/2;
-    margin-right: 32px;
+    
 }
 .story img{
     display: inline-block;
     grid-column: 2/3;
     grid-row: 1/2;
-    width: 88%; 
-    margin-top: 24px;
+    width: 80%; 
+    margin-left: var(--largest-gap);
 }
 @media(max-width: 940px){
     header{
