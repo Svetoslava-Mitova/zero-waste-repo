@@ -24,6 +24,10 @@ h3{
     margin-left: var(--largest-gap);
     padding-left: var(--large-gap);
 }
+.maps iframe{
+    width: 90%;
+    height: 480px;
+}
 .left-btn{
     display: inline-block;
     background: var(--sitecolor);
