@@ -1,4 +1,6 @@
 /*This file include the common css code for all site pages.*/
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 *, *:before, *:after{
     margin: 0;
     padding: 0;
